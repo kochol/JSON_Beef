@@ -150,7 +150,7 @@ namespace JSON_Beef.Serialization
 
 			let type = object.GetType() as SpecializedGenericType;
 			let addMethod = Try!(type.GetMethod("Add"));
-			let paramType = type.GetGenericArg(0) as TypeInstance;
+			let paramType = type.GetGenericArg(0);// as TypeInstance;
 
 			for (int i = 0; i < jsonArray.Count; i++)
 			{
