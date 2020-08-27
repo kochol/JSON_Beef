@@ -394,7 +394,6 @@ namespace JSON_Beef.Serialization
 					continue;
 				}
 
-				//let fieldValue = field.GetValue(obj).Get().Get<Object>();
 
 				if (!HasField(jsonObject, field))
 				{
